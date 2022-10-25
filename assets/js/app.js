@@ -2,7 +2,7 @@
 
 // Select nav links
 const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content')
+const tabContents = document.querySelectorAll('[data-tab-content]')
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
@@ -26,3 +26,8 @@ const nav = document.querySelector("nav");
 burger.addEventListener("click", () => {
   ul.classList.toggle("show");
 });
+
+//Popup function
+function togglePopup(popid){
+  document.getElementById(popid).classList.toggle("active");
+}

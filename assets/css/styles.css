@@ -57,7 +57,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
+  background-image: linear-gradient(rgb(140, 231, 201),rgb(212, 231, 225),rgb(140, 231, 201));
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -120,6 +120,7 @@ nav ul li {
   gap: 2.5rem;
   max-width: 68.75rem;
   margin: auto;
+  background-image:linear-gradient(rgb(254, 218, 242),white,white);
 }
 
 .hero img {
@@ -130,7 +131,9 @@ nav ul li {
 .bio {
   width: 25rem;
   padding: 0.625rem;
+  margin: 2%;
   border-radius: 6px;
+  background-color: rgb(158, 158, 158);
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
@@ -141,6 +144,7 @@ nav ul li {
 .bio p {
   line-height: var(--line-height);
   padding: 0.3rem 0;
+  color: white;
 }
 
 .more-about {
@@ -159,6 +163,7 @@ nav ul li {
   margin: 0 auto;
   padding: 2.79rem;
   border-radius: 5px;
+  background-image:linear-gradient(rgb(218, 238, 254),white,white);
 
 }
 
@@ -187,6 +192,10 @@ nav ul li {
 
 .skills-wrapper img {
   padding: 1.25rem;
+}
+
+.skill-card{
+  background-image:linear-gradient(rgb(218, 238, 254),white);
 }
 
 .icon {
@@ -227,6 +236,7 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image:linear-gradient(rgb(218, 238, 254),white,white);
 }
 
 .projects-title {
@@ -275,6 +285,7 @@ nav ul li {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-image:linear-gradient(rgb(218, 238, 254),white,white,white,white,white,white,white,white);
 }
 
 .gallery-card {
@@ -282,7 +293,7 @@ nav ul li {
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   text-align: center;
-  width: 40%;
+  max-width: 40%;
   padding: 0.5%;
   margin:1%;
   display: flex;
@@ -290,9 +301,87 @@ nav ul li {
   align-items: center;
 }
 
+
+
+.brightness {
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+
+}
+.brightness img:hover {
+  opacity: .5;
+}
+
 .gallery-icon{
-  width: 97%;
-  height: 95%;
+  max-width: 97%;
+  max-height: 95%;
+}
+
+.popup .overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .content{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  background: radial-gradient(#6bd2e9, #b8bdf7);
+  width: 70%;
+  height: 70%;
+  z-index: 2;
+  text-align: justify;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.inside{
+  display: flex;
+  width: 90%;
+  height: 90%;
+
+}
+
+
+
+.popup .close-btn{
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup.active .overlay{
+  display: block;
+}
+
+.popup.active .content{
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%,-50%) scale(1);
+}
+
+
+.content img{
+  margin-right: 2%;
+  max-width: 60%;
+  height: auto;
+  object-fit: scale-down;
 }
 
 .contact {
