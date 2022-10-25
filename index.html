@@ -40,11 +40,11 @@
   <div class="tab-content">
     <div class="hero" id="hero" data-tab-content>
       <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
         <p class="bio-text">
-          I am passionate about leveraging my bacground 
+          I manipulate gepspatial data and make maps. My passion is to leverage my bacground 
           in envieonmental engineering with my technical 
-          geospatial skills to connect people in
+          geospatial skills to connect people in. Here are some of my works here for you to check out. 
+          Hope you enjoy!
         </p>
       </div>
     </div>
@@ -76,20 +76,20 @@
 
     <div class="skills" id="skills" data-tab-content>
       <h2 class="skill-header">Skills & Certificates</h2>
+      <div class="skill-card">
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img src="assets/icons/ArcGIS-Pro-product-icon.png" alt="" loading="lazy" class="icon icon-card" />
+            <img src="assets/icons/arcmap-icon.png" alt="" loading="lazy" class="icon icon-card" />
+            <img src="assets/icons/Auto-CAD.png" alt="" loading="lazy" class="icon icon-card" />
+          </div>
 
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img src="assets/icons/ArcGIS-Pro-product-icon.png" alt="" loading="lazy" class="icon icon-card" />
-          <img src="assets/icons/arcmap-icon.png" alt="" loading="lazy" class="icon icon-card" />
-          <img src="assets/icons/Auto-CAD.png" alt="" loading="lazy" class="icon icon-card" />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img src="assets/icons/sql-icon.png" alt="" loading="lazy" class="icon icon-card" />
-          <img src="assets/icons/blender.png" alt="" loading="lazy" class="icon icon-card" />
-          <img src="assets/icons/360.png" alt="" loading="lazy" class="icon icon-card" />
-        </div>
-      </div>      
+          <div class="second-set animate__animated animate__pulse">
+            <img src="assets/icons/sql-icon.png" alt="" loading="lazy" class="icon icon-card" />
+            <img src="assets/icons/blender.png" alt="" loading="lazy" class="icon icon-card" />
+            <img src="assets/icons/360.png" alt="" loading="lazy" class="icon icon-card" />
+         </div>
+        </div>      
       <h2>Certificates</h2>
       <div class="certificate">
         <a href="https://www.esri.com/training/TrainingRecord/Certificate/dolu1996/61541162eaffa34787b09514/240" target="blank">
@@ -118,11 +118,261 @@
           Python Scripting for Geoprocessing Workflow</a>
         <a href="https://www.esri.com/training/TrainingRecord/Certificate/dolu1996/633c70b30121ab3c738f8df2/240" target="blank">
           Telling Stories with GIS Maps</a>
-    </div>
       </div>
+    </div>
+    </div>
+
+<!-- Popup section-->
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-1')" class="close-btn">&times;</div>
+          <h1>ArcGIS Model Builder</h1>
+          <div class="inside">
+          <img src="assets/images/RiverExtract_V7.png"/>
+          <p>This Arcgis Model tool used in Previsico<br><br>
+          1. Resample the DTM of area of interest into desgined resolution without destructing too much of the river characteristics.<br><br>
+          2. Identify the river shape based on USGS provided catseed raster data.<br><br>
+          3. Slice the humongous US state data into pieces in order to ease the workload of the CPU.<br><br>
+          Tools: Esri ArcGIS Pro<br><br>
+          Skills: ArcGIS toolboxes, ArcPy, SQL
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-2">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-2')" class="close-btn">&times;</div>
+          <h1>Gym Room in Hong Kong</h1>
+          <div class="inside">
+          <img src="assets/images/Layout1.png"/>
+          <p>
+            This map shows where to find the a gym to work out in Hong Kong. The data were stored by government in json format.
+            It required me to convert the Degree/Minutes/Seconds (DMS) back to Decimal Degrees (DD) via SQL in order to let ArcGIS Pro be able
+            to read it as geojson data<br><br>
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Points"<br><br>
+          Skills: ArcGIS, SQL, json, coordination system understanding
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-3">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-3')" class="close-btn">&times;</div>
+          <h1>Toronto TTC Subway Route</h1>
+          <div class="inside">
+          <img src="assets/images/Layout2.png"/>
+          <p>
+            It is better for a new comer to get familiar with the traffic system so I won't get lose easily. As a GIS analyst, I can even generate
+            a TTC map for myself to read it anytime!<br><br>
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Lines"<br><br>
+          Skills: ArcGIS Pro
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-4">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-4')" class="close-btn">&times;</div>
+          <h1>Interesting Island Shape in the World</h1>
+          <div class="inside">
+          <img src="assets/images/Layout3.png"/>
+          <p>
+            The idea of this map is to demostrate the beauty of nature. 
+            Islands are always alluring. Some are attractive because of
+             their white sand beaches while others stand out for their 
+             palm-fringed tropical landscapes or clear, warm water. Some are simply having interesting shape.<br><br>
+             1. Brijuni: Fish<br><br>
+             2. Molokini: Banana<br><br>
+             3. Seahorse Island: Sea horse<br><br>
+             4. Tavarua: Heart<br><br>
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Polygons"<br><br>
+          Skills: ArcGIS Pro
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-5">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-5')" class="close-btn">&times;</div>
+          <h1>A Map of Vegetation Coverage in Canada</h1>
+          <div class="inside">
+          <img src="assets/images/Layout4.png"/>
+          <p>
+            This map shows the vegetation coverage in Canada based on the land use data provided by the Canada government.
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Color Friday: Green"<br><br>
+          Skills: ArcGIS Pro
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-6">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-6')" class="close-btn">&times;</div>
+          <h1>Ukraine</h1>
+          <div class="inside">
+          <img src="assets/images/Layout5.png"/>
+          <p>
+            This map shows where different Ukraine cities located and outline the boundary of it.
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Ukraine"<br><br>
+          Skills: ArcGIS Pro
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-7">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-7')" class="close-btn">&times;</div>
+          <h1>The Flighting Route of My Trip to Toronto</h1>
+          <div class="inside">
+          <img src="assets/images/Layout6.png"/>
+          <p>
+            This map shows the flighting route of me travelling to Toronto to start a new page of my life.<br><br>
+            The total flight time was 28 hours which is really tough. The first stop was Taipei and I was straving.
+            Luckily, there is one cafe' serving food at late night and let me hang in my long trip.<br><br>
+            The next stop was Vancouver and it was a really rush interchange as I need to pick up my luggage for interchange and review my visa at the same time.
+            And I still made it and arrive Toronto!<br><br>
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Network"<br><br>
+          Skills: ArcGIS Pro
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-8">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-8')" class="close-btn">&times;</div>
+          <h1>Toronto Elevation</h1>
+          <div class="inside">
+          <img src="assets/images/Layout7.png"/>
+          <p>
+            This map demostrate the elevation characteristics of Toronto in a heat-map like format.<br><br>
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Rasters"<br><br>
+          Skills: ArcGIS Pro
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-9">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-9')" class="close-btn">&times;</div>
+          <h1>NT's Landuse</h1>
+          <div class="inside">
+          <img src="assets/images/Layout8.jpeg"/>
+          <p>
+            This time, I want to try something new and I decide to use an alter GIS tool instead of ArcGIS.
+            OpenStreetMa is a  is a collaborative project to create a free editable geographic database of the world. 
+            The geodata underlying the maps is considered the primary output of the project. The creation and growth 
+            of OSM has been motivated by restrictions on use or availability of map data across much of the world, and 
+            the advent of inexpensive portable satellite navigation devices.<br><br>
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Data: OpenStreetMap"<br><br>
+          Skills: OpenStreetMap
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-10">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-10')" class="close-btn">&times;</div>
+          <h1>Moon</h1>
+          <div class="inside">
+          <img src="assets/images/Layout9.png"/>
+          <p>
+            This map is generated by Moon elevation data from NASA. I ulitize the elevation map to bump the height characteristic of a sphere. A moon replicate can then be made.
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Space"<br><br>
+          Skills: Blender
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-11">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-11')" class="close-btn">&times;</div>
+          <h1>Corrupted Shapefile</h1>
+          <div class="inside">
+          <img src="assets/images/Layout10.png"/>
+          <p>
+            A corrupted shapfile generated during work. 100% pure luck, 0 intention to make this!
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "A Bad Map"<br><br>
+          Skills: ArcGIS Pro
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-12">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-12')" class="close-btn">&times;</div>
+          <h1>Road Centreline in Hong Kong</h1>
+          <div class="inside">
+          <img src="assets/images/Layout11.png"/>
+          <p>
+            This map demostrate the centerline of road in Hong Kong. They mainly clustered in the Hong Kong island, Kowloon South and New Territories West.
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Color Friday: Red"<br><br>
+          Skills: ArcGIS Pro
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-13">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-13')" class="close-btn">&times;</div>
+          <h1>Biggest Island of the World</h1>
+          <div class="inside">
+          <img src="assets/images/Layout12.png"/>
+          <p>
+            This map demostrate the biggest island on earth and listed as below:
+            1. Greenland (836, 330 sq miles)
+            2. New Guinea (317, 150 sq miles)
+            3. Borneo (288, 869 sq miles)
+            4. Madagasacar (226, 758 sq miles)
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Islands"<br><br>
+          Skills: ArcGIS Pro
+        </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-14">
+      <div class="overlay"></div>
+        <div class="content">
+            <div onclick="togglePopup('popup-14')" class="close-btn">&times;</div>
+          <h1>Hong Kong's Street Density</h1>
+          <div class="inside">
+          <img src="assets/images/Layout13.png"/>
+          <p>
+            This map presents the traffic load in Hong Kong in the shape of hexagon. To achieve, tessellation was generate based on the shape of AOI.
+            The hexagon shapefile was then spatial joint with the Hong Kong street data to identify how crowd the road are.
+            This idea is based on the #30DayMapChallenge, a daily mapping challenge open to everyone and the category for this map is "Hexagons"<br><br>
+          Skills: ArcGIS Pro, Generate Tessellation, Spatial Joint
+        </p>
+          </div>
+        </div>
+    </div>
 
     <!-- Projects section -->
-
     <div class="projects" id="projects" data-tab-content>
       <h2 class="projects-title">Some of my Recent Projects</h2>
       <div class="projects-container">
@@ -149,16 +399,74 @@
          <h2 class="profolio-title">Profolio</h2>
          <div class="gallery-container">
           <div class="gallery-card">
-            <img src="assets/images/RiverExtract_V7.png" class="gallery-icon" alt="ArcGIS River Extract Model" loading="lazy" class="gallery"/>
+            <div class="brightness">
+            <img onclick="togglePopup('popup-1')" src="assets/images/RiverExtract_V7.png" class="gallery-icon" alt="ArcGIS River Extract Model" class="gallery"/>
+            </div>
           </div>
           <div class="gallery-card">
-            <img src="assets/images/Layout1.png" class="gallery-icon" alt="30 Days Map Challenge 1" loading="lazy" class="gallery"/>  
+            <div class="brightness">
+            <img onclick="togglePopup('popup-2')" src="assets/images/Layout1.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>
+          </div>
           </div>
           <div class="gallery-card">
-            <img src="assets/images/Layout2.png" class="gallery-icon" alt="30 Days Map Challenge 1" loading="lazy" class="gallery"/>  
+            <div class="brightness">
+            <img onclick="togglePopup('popup-3')" src="assets/images/Layout2.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
           </div>
           <div class="gallery-card">
-            <img src="assets/images/Layout3.png" class="gallery-icon" alt="30 Days Map Challenge 1" loading="lazy" class="gallery"/>  
+            <div class="brightness">
+            <img onclick="togglePopup('popup-4')" src="assets/images/Layout3.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
+          </div>
+          <div class="gallery-card">
+            <div class="brightness">
+            <img onclick="togglePopup('popup-5')" src="assets/images/Layout4.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
+          </div>
+          <div class="gallery-card">
+            <div class="brightness">
+            <img onclick="togglePopup('popup-6')" src="assets/images/Layout5.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
+          </div>
+          <div class="gallery-card">
+            <div class="brightness">
+            <img onclick="togglePopup('popup-7')" src="assets/images/Layout6.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
+          </div>
+          <div class="gallery-card">
+            <div class="brightness">
+            <img onclick="togglePopup('popup-8')" src="assets/images/Layout7.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
+          </div>
+          <div class="gallery-card">
+            <div class="brightness">
+            <img onclick="togglePopup('popup-9')" src="assets/images/Layout8.jpeg" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
+          </div>
+          <div class="gallery-card">
+            <div class="brightness">
+            <img onclick="togglePopup('popup-10')" src="assets/images/Layout9.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
+          </div>
+          <div class="gallery-card">
+            <div class="brightness">
+            <img onclick="togglePopup('popup-11')" src="assets/images/Layout10.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
+          </div>
+          <div class="gallery-card">
+            <div class="brightness">
+            <img onclick="togglePopup('popup-12')" src="assets/images/Layout11.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
+          </div>
+          <div class="gallery-card">
+            <div class="brightness">
+            <img onclick="togglePopup('popup-13')" src="assets/images/Layout12.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
+          </div>
+          <div class="gallery-card">
+            <div class="brightness">
+            <img onclick="togglePopup('popup-14')" src="assets/images/Layout13.png" class="gallery-icon" alt="30 Days Map Challenge 1" class="gallery"/>  
+          </div>
           </div>
         </div>
         </div>
